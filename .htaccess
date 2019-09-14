@@ -1,0 +1,7 @@
+AddDefaultCharset off
+DirectoryIndex index.php
+Options -Indexes
+php_flag register_globals off
+RewriteEngine on
+
+RewriteRule ^-(.*) /redirect.php?cropKey=$1 [L]
